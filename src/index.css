@@ -1,0 +1,14 @@
+:root {
+  --bg-color: #f4f3e8cc;
+  --btn-color: #F4F3E8;
+  --sub-color: #99998F;
+  --hover-color: #CDC56D;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #000;
+}
+
