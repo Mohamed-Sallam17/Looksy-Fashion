@@ -1,1 +1,12 @@
 @import "tailwindcss";
+
+/* Header */
+.nav__group {
+    flex: 1;
+    justify-content: space-evenly;
+}
+/* .m-search-bar svg{
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+} */

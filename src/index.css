@@ -10,5 +10,14 @@ body {
   padding: 0;
   box-sizing: border-box;
   color: #000;
+  font-family: "Inter", sans-serif;
+}
+h2{
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
 }
 
+.container{
+  padding: 1rem;
+  margin: auto;
+}
