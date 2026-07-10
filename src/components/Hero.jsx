@@ -5,7 +5,7 @@ function Hero() {
   return (
     <section className="hero h-[100dvh]">
       <div className="flex flex-col-reverse lg:flex-row lg:h-full gap-4">
-        <div className="hero__content flex-1 space-y-4 pl-6">
+        <div className="hero__content flex-1 space-y-4 px-2 lg:pl-6 text-center lg:text-start">
           <h2 className="text-2xl lg:text-5xl leading-[2em] ">
             LOOK <br />
             GOOD <br />
@@ -15,7 +15,7 @@ function Hero() {
           <p className="text-[var(--sub-color)]">
             At Looksy, we blend timeless style with modern attitude — made for those who dare to be different.
           </p>
-          <Link to="/shop" className="w-[140px] h-[56px] bg-[var(--btn-color)] flex justify-center mt-10">
+          <Link to="/shop" className="w-[140px] h-[56px] bg-[var(--btn-color)] flex justify-center m-auto lg:m-0 lg:mt-2">
             <button className="text-bold"> Shop Now </button>
           </Link>
         </div>
