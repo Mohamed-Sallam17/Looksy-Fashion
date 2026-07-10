@@ -4,7 +4,7 @@ import heroImg from '../assets/hero-img.webp'
 function Hero() {
   return (
     <section className="hero h-[100dvh]">
-      <div className="flex h-full gap-4">
+      <div className="flex flex-col-reverse lg:flex-row lg:h-full gap-4">
         <div className="hero__content flex-1 space-y-4 pl-6">
           <h2 className="text-2xl lg:text-5xl leading-[2em] ">
             LOOK <br />
@@ -19,9 +19,9 @@ function Hero() {
             <button className="text-bold"> Shop Now </button>
           </Link>
         </div>
-        <div className="hero__media flex-1 bg-[var(--bg-color)] pr-6">
-          <div className="hero_model h-full">
-            <img src={heroImg} alt="Hero Banner" className="w-[50%] h-full" />
+        <div className="hero__media flex-1 bg-[var(--bg-color)] lg:pr-6">
+          <div className="hero_model h-full px-2 lg:px-0">
+            <img src={heroImg} alt="Hero Banner" className="w-[50%] h-full m-auto lg:m-0" />
           </div>
         </div>
       </div>
