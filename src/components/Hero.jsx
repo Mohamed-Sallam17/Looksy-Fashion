@@ -5,7 +5,7 @@ function Hero() {
   return (
     <section className="hero h-[100dvh]">
       <div className="flex flex-col-reverse lg:flex-row lg:h-full gap-4">
-        <div className="hero__content flex-1 space-y-4 px-2 lg:pl-6 text-center lg:text-start">
+        <div className="hero__content flex flex-col justify-center flex-1 space-y-4 px-2 lg:px-0 lg:pl-6 text-center lg:text-start">
           <h2 className="text-2xl lg:text-5xl leading-[2em] ">
             LOOK <br />
             GOOD <br />
