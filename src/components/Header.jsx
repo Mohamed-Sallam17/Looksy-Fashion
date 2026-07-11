@@ -7,7 +7,7 @@ import { IoIosMenu } from 'react-icons/io'
 
 function Header() {
   return (
-    <header className=''>
+    <header className='bg-transparent fixed w-full'>
       <div className="container space-y-1.5">
         <div className="m-search-bar flex items-center gap-2 lg:hidden border-2 border-[var(--btn-color)] rounded-3xl h-10 p-2">
           <SearchIcon width={22} height={22} className=''/>
