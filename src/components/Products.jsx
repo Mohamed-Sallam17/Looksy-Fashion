@@ -25,7 +25,7 @@ function Products() {
     <section className="products-list mt-8">
       <div className="container">
         <div className="top-title flex justify-between items-center mb-4">
-            <h2 className="text-bold text-3xl">Products</h2>
+            <h2 className="font-bold text-3xl">Products</h2>
             <div className="w-max py-2 px-4 border-1 border-[var(--sub-color)] rounded-3xl flex items-center gap-2">
                 <span className="text-[var(--sub-color)]">All Collection</span>
                 <FaArrowRightLong/>

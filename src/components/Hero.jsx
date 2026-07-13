@@ -16,7 +16,7 @@ function Hero() {
             At Looksy, we blend timeless style with modern attitude — made for those who dare to be different.
           </p>
           <Link to="/shop" className="w-[140px] h-[56px] bg-[var(--btn-color)] flex justify-center m-auto lg:m-0 lg:mt-2">
-            <button className="text-bold"> Shop Now </button>
+            <button className="font-bold"> Shop Now </button>
           </Link>
         </div>
         <div className="hero__media flex-1 bg-[var(--bg-color)] lg:pr-6">

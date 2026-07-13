@@ -1,3 +1,4 @@
+import Banner from "./Banner"
 import Brands from "./Brands"
 import Hero from "./Hero"
 import Products from "./Products"
@@ -8,6 +9,7 @@ function Home() {
       <Hero/>
       <Brands/>
       <Products/>
+      <Banner/>
     </>
   )
 }
