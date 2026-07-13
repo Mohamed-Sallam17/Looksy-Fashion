@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
+import { FaArrowRightLong } from "react-icons/fa6";
 
 
 function Products() {
@@ -14,16 +15,22 @@ function Products() {
         console.log("الأخطاء إن وجدت (error):", error);
 
 
-        if(isLoading){
-            return <h4>جاري تحميل المنتجات ....</h4>
-        }
-        if(error){
-            return <h4>حدث خطأ: {error.message}</h4>
-        }
+        // if(isLoading){
+        //     return <h4>جاري تحميل المنتجات ....</h4>
+        // }
+        // if(error){
+        //     return <h4>حدث خطأ: {error.message}</h4>
+        // }
   return (
-    <section className="products-list">
+    <section className="products-list mt-8">
       <div className="container">
-        <div className="top-title"></div>
+        <div className="top-title flex justify-between items-center mb-4">
+            <h2 className="text-bold text-3xl">Products</h2>
+            <div className="w-max py-2 px-4 border-1 border-[var(--sub-color)] rounded-3xl flex items-center gap-2">
+                <span className="text-[var(--sub-color)]">All Collection</span>
+                <FaArrowRightLong/>
+            </div>
+        </div>
         <div className="product-slider">
           <Swiper
             navigation={true}
