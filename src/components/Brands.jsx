@@ -25,7 +25,7 @@ const skillsIcons = [
 
 function Brands() {
   return (
-        <div className="brands bg-black text-center w-full mt-8" id='brands'>
+        <div className="brands bg-black text-center w-full mt-8 lg:mt-0" id='brands'>
             <div className="brands-imgs">
                 <div className="marquee overflow-x-hidden relative">
                     <div className="marquee-track flex w-max gap-4 md:gap-8 lg:gap-15">

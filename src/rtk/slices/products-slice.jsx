@@ -1,11 +1,13 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 
-export const productSlice = createSlice({
-    name:'productSlice',
-    initialState: [],
-    reducers:{
-        
-    }
+export const productsApi = createApi({
+    reducerPath:'productsApi',
+    baseQuery: fetchBaseQuery({baseUrl: 'https://dummyjson.com/'}),
+    endpoints: (builder)=>({
+        getProducts: builder.query({
+            query : () => 'products'
+        }),
+    }),
 })
 
-export default productSlice.reducer
+export const {useGetProductsQuery} = productsApi
