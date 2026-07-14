@@ -10,17 +10,15 @@ function Products() {
 
         const {data: dataResponse, error, isLoading} = useGetProductsQuery();
 
-        console.log("حالة التحميل (isLoading):", isLoading);
+        // console.log("حالة التحميل (isLoading):", isLoading);
         console.log("البيانات الراجعة (products):", dataResponse);
-        console.log("الأخطاء إن وجدت (error):", error);
-
-
-        // if(isLoading){
-        //     return <h4>جاري تحميل المنتجات ....</h4>
-        // }
-        // if(error){
-        //     return <h4>حدث خطأ: {error.message}</h4>
-        // }
+        // console.log("الأخطاء إن وجدت (error):", error);
+        if(isLoading){
+            return <h4>جاري تحميل المنتجات ....</h4>
+        }
+        if(error){
+            return <h4>حدث خطأ: {error.message}</h4>
+        }
   return (
     <section className="products-list mt-8">
       <div className="container">
