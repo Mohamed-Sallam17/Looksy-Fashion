@@ -7,12 +7,8 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 
 function Products() {
-
-        const {data: dataResponse, error, isLoading} = useGetProductsQuery();
-
-        // console.log("حالة التحميل (isLoading):", isLoading);
-        console.log("البيانات الراجعة (products):", dataResponse);
-        // console.log("الأخطاء إن وجدت (error):", error);
+  
+  const {data: dataResponse, error, isLoading} = useGetProductsQuery();
         if(isLoading){
             return <h4>جاري تحميل المنتجات ....</h4>
         }
