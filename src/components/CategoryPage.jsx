@@ -1,5 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useGetSingleCategoryQuery } from "../rtk/slices/products-slice"
+import Breadcrumbs from "./Breadcrumbs";
+
 
 function CategoryPage() {
     const {categoryName} = useParams();
@@ -14,7 +16,9 @@ function CategoryPage() {
   return (
     <main id="main-content">
         <div className="container">
-            <div className="breadcrambs"></div>
+            <div className="breadcrambs">
+                <Breadcrumbs/>
+            </div>
             <div className="category-title">
                 <h2>{categoryName}</h2>
             </div>
