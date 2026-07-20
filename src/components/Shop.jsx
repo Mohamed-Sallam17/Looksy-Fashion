@@ -1,5 +1,5 @@
-import { data } from "react-router-dom";
 import { useGetProductsQuery } from "../rtk/slices/products-slice"
+import Breadcrumbs from "./Breadcrumbs";
 
 function Shop() {
 
@@ -11,6 +11,7 @@ function Shop() {
   return (
     <section className="shop">
       <div className="container">
+        <Breadcrumbs/>
         <div className="products_tabs"></div>
         <div className="top-title flex justify-between items-center mb-4">
             <h2 className="font-bold text-3xl">All Products</h2>

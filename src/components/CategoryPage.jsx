@@ -22,8 +22,9 @@ function CategoryPage() {
             <div className="category-title">
                 <h2>{categoryName}</h2>
             </div>
-            <div className="main-content">
-                <aside className="product-filter">
+            <div className="main-content flex gap-4">
+                <aside className="product-filter w-[20%] bg-gray-400">
+                    <h2>Filter</h2>
                 </aside>
                 <div>
                     <div className="products-toolbar"></div>

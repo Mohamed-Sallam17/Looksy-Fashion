@@ -1,8 +1,13 @@
+import Breadcrumbs from "./Breadcrumbs"
+
 function About() {
   return (
-    <div>
-      <h2>About Page</h2>
-    </div>
+    <section>
+      <div className="container">
+        <Breadcrumbs/>
+        <h2>About Page</h2> 
+      </div>
+    </section>
   )
 }
 
