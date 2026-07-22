@@ -12,6 +12,8 @@ function Home() {
 
     
     const {data: dataResponse, error, isLoading} = useGetProductsQuery();
+    console.log(dataResponse);
+    
           if(isLoading){
               return <h4>جاري تحميل المنتجات ....</h4>
           }
@@ -24,25 +26,27 @@ function Home() {
       <Hero/>
       <Brands/>
       <div className="product-slider">
-        <Swiper
-          navigation={true}
-          modules={[Navigation]}
-          slidesPerView={1}
-          breakpoints={{
-              640:{slidesPerView: 2},
-              991:{slidesPerView: 3},
-              1024:{slidesPerView: 4},
-          }}
-          spaceBetween={30}
-          className="mySwiper">
-            {
-              dataResponse?.products?.map((product)=>(
-                <SwiperSlide>
-                  <ProductCard product={product} key={product.id} layout='verticle'/>
-                </SwiperSlide>
-              ))
-            }
-          </Swiper>
+        <div className="container">
+          <Swiper
+            navigation={true}
+            modules={[Navigation]}
+            slidesPerView={1}
+            breakpoints={{
+                640:{slidesPerView: 2},
+                991:{slidesPerView: 3},
+                1024:{slidesPerView: 4},
+            }}
+            spaceBetween={30}
+            className="mySwiper">
+              {
+                dataResponse?.products?.map((product)=>(
+                  <SwiperSlide key={product.id}>
+                    <ProductCard product={product} layout='vertical'/>
+                  </SwiperSlide>
+                ))
+              }
+            </Swiper>
+        </div>
       </div>
       <Banner/>
     </>
